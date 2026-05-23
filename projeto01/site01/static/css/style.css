@@ -15,6 +15,7 @@ body {
     position: absolute;
 }
 
+/* Fundo */
 .home-container img.fundo {
     top: 0;
     left: 0;
@@ -23,37 +24,43 @@ body {
     z-index: 0;
 }
 
-
+/* Árvore esquerda com animação */
 .home-container img.arvore-esquerda {
     bottom: 0;
     left: 0;
-    width: 2000px;
+    width: 1400px;
     z-index: 1;
+    animation: slideLeft 2s ease-out forwards;
 }
 
+/* Árvore direita com animação */
 .home-container img.arvore-direita {
-    bottom: -1;
+    bottom: 0;
     right: 0;
-    width: 2000px;
-    z-index: 999;
+    width: 1400px;
+    z-index: 2;
+    animation: slideRight 2s ease-out forwards;
 }
 
+/* Título */
 .home-container img.titulo {
     top: -100px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1600px;
+    width: 1300px;
     z-index: 5;
 }
 
+/* Van */
 .home-container img.van {
     top: 50%;
     left: 51%;
     transform: translate(-50%, -50%);
-    width: 2000px;
+    width: 1500px;
     z-index: 2; 
 }
 
+/* Botão */
 .btn {
     position: absolute;
     bottom: 40px;
@@ -68,10 +75,22 @@ body {
     font-weight: bold;
     box-shadow: 0 6px 12px rgba(0,0,0,0.6);
     transition: all 0.3s ease;
-    z-index: 10;
+    z-index: 1000; /* maior que as árvores */
 }
 
 .btn:hover {
     background-color: #ff6600;
     transform: translateX(-50%) scale(1.1);
 }
+
+/* Animações */
+@keyframes slideLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+ 

@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('site01.urls')),
+    path('', include('site01.urls')),  # inclui as rotas da app site01
 ]

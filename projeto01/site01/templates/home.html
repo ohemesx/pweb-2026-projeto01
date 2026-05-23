@@ -14,7 +14,9 @@
         <img src="{% static 'img/titulo.png' %}" class="titulo" alt="Título Scooby-Doo">
         <img src="{% static 'img/van.png' %}" class="van" alt="Mystery Machine">
 
-        <a href="#" class="btn">Conheça a turma do mistério</a>
+        <a href="{% url 'inicio' %}?animacao=1" class="btn">Conheça a turma do mistério</a>
+
+        
     </div>
 </body>
 </html>

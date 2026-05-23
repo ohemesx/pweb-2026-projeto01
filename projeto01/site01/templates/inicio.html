@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Scooby-Doo - Início</title>
+    <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+</head>
+<body class="inicio-page">
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'img/titulo.png' %}" alt="Scooby-Doo Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'inicio' %}">Início</a></li>
+            <li><a href="/elenco/">Elenco</a></li>
+            <li><a href="/sobre/">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <!-- Slide 1 -->
+        <section class="slide active" id="origem">
+            <div class="slide-wrapper">
+                <div class="image-side">
+                    <img src="{% static 'img/turmajunta.png' %}" alt="Turma Scooby-Doo">
+                </div>
+                <div class="text-side">
+                    <h2>ORIGEM E CRIAÇÃO</h2>
+                    <p>
+O desenho <strong>Scooby-Doo</strong> estreou em 13 de setembro de 1969 na CBS, criado por Joe Ruby e Ken Spears e produzido originalmente pela Hanna-Barbera. A motivação da emissora era oferecer uma animação divertida, mas que fosse considerada adequada por grupos de pais preocupados com a violência nos desenhos da época. O nome “Scooby-Doo” surgiu inspirado em um trecho da música <strong>Strangers in the Night</strong>, de Frank Sinatra, onde ele canta “Dooby Dooby Doo”. <strong>Escute agora:</strong>
+                    </p>
+                        <div class="audio-box">
+    <h3>🎵 Escute Agora</h3>
+    <audio controls>
+        <source src="{% static 'musica/musica.mp3' %}" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+</div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="slide" id="evolucao">
+            <div class="slide-wrapper">
+                <div class="image-side">
+                    <img src="{% static 'img/turmaliveaction.png' %}" alt="Scooby-Doo Live Action">
+                </div>
+                <div class="text-side">
+                    <h2>EVOLUÇÃO DAS SÉRIES</h2>
+                    <ul>
+                        <li>Scooby-Doo, Cadê Você? (1969–1970)</li>
+                        <li>Os Novos Filmes de Scooby-Doo (1972–1974)</li>
+                        <li>Scooby-Doo e Scooby-Loo (1979–1980)</li>
+                        <li>Os 13 Fantasmas de Scooby-Doo (1985)</li>
+                        <li>O Que Há de Novo, Scooby-Doo? (2002–2006)</li>
+                        <li>Scooby-Doo! Mistério S/A (2010–2013)</li>
+                       <li>A Pup Named Scooby-Doo (1988–1991) – versão infantil, mostrando a turma criança,</li>
+
+<li>What's New, Scooby-Doo? Filmes especiais (2003–2009) – longa-metragens derivados da série moderna.</li>
+
+<li>Be Cool, Scooby-Doo! (2015–2018) – estilo mais cartunesco e humor leve.</li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section class="slide" id="filmes">
+            <div class="slide-wrapper">
+                <div class="image-side">
+                    <img src="{% static 'img/witches.png' %}" alt="Turma Scooby-Doo">
+                </div>
+                <div class="text-side">
+                    <h2>FILMES E EXPANSÃO</h2>
+                    <p>
+                        Os filmes e expansões da franquia marcaram uma nova fase para Scooby-Doo: títulos como *Scooby-Doo on Zombie Island* (1998), *Scooby-Doo and the Witch’s Ghost* (1999), além das adaptações em live-action *Scooby-Doo* (2002) e *Scooby-Doo 2* (2004) ajudaram a renovar o interesse do público. A partir de 2001, a produção passou para a Warner Bros., que consolidou a marca e ampliou seu alcance. Hoje, a franquia soma mais de 550 episódios e dezenas de filmes, exibidos em diversos países, incluindo o Brasil, e continua sendo lembrada por bordões clássicos como: “Eu teria conseguido se não fossem essas crianças xeretas e esse cachorro idiota!”.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botões de navegação -->
+        <button class="prev">←</button>
+        <button class="next">→</button>
+    </div>
+
+   <!-- Rodapé -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>&copy; 2026 Projeto Scooby-Doo | Desenvolvido por Hemerson</p>
+        <p>Contato: <a href="email:hemersondaniel987@gmail.com" style="color: aliceblue;">hemersondaniel987@gmail.com</a></p>
+    </div>
+    <div class="social-section">
+        <p>Acompanhe também:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ohemesx/" target="_blank">
+                <img src="{% static 'img/instagram.png' %}" alt="Instagram">
+            </a>
+            <a href="https://github.com/ohemesx" target="_blank">
+                <img src="{% static 'img/github.png' %}" alt="GitHub">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
