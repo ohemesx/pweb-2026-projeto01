@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Scooby-Doo - Elenco</title>
+    <link rel="stylesheet" href="{% static 'css/elenco.css' %}">
+</head>
+<body class="elenco-page">
+    <div class="ghost"></div>
+
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'img/titulo.png' %}" alt="Scooby-Doo Logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'inicio' %}">Início</a></li>
+            <li><a href="{% url 'elenco' %}" class="active">Elenco</a></li>
+            <li><a href="{% url 'sobre' %}">Sobre</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="elenco-container">
+        <h1>Elenco</h1>
+
+        <div class="personagens">
+
+    
+    <div class="card">
+        <img src="{% static 'img/scooby-doo.png' %}" alt="Scooby-Doo">
+
+        <audio class="voz">
+            <source src="{% static 'musica/scooby.mp3' %}" type="audio/mpeg">
+        </audio>
+
+        <div class="info">
+            <h2>Scooby-Doo</h2>
+
+            <p>
+                O grande danado que ama biscoitos Scooby e sempre se mete em confusão junto com Salsicha.
+            </p>
+
+            <img src="{% static 'img/foto-scooby.jpg' %}" alt="Scooby-Doo" class="foto-info">
+
+            <p class="dublador">
+                🎤  Mantenha o mouse aqui e escute a voz do Scooby-Doo dublado por Orlando Drummond
+            </p>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="{% static 'img/salsicha.png' %}" alt="Shaggy Rogers">
+
+        <audio class="voz">
+            <source src="{% static 'musica/salsicha.mp3' %}" type="audio/mpeg">
+        </audio>
+
+        <div class="info">
+            <h2>Salsicha Rogers</h2>
+
+            <p>
+                Melhor amigo de Scooby, comilão e medroso, mas sempre fiel ao grupo.
+            </p>
+
+            <img src="{% static 'img/foto-salsicha.jpg' %}" alt="Shaggy Rogers" class="foto-info">
+
+            <p class="dublador">
+                🎤  Mantenha o mouse aqui e escute a voz do Salsicha dublado por Mário Monjardim
+            </p>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="{% static 'img/daphne.png' %}" alt="Daphne Blake">
+
+        <audio class="voz">
+            <source src="{% static 'musica/daphne.mp3' %}" type="audio/mpeg">
+        </audio>
+
+        <div class="info">
+            <h2>Daphne Blake</h2>
+
+            <p>
+                Amante da moda, corajosa e muitas vezes chamada de arruma-encrenca.
+            </p>
+
+            <img src="{% static 'img/foto-daphne.jpg' %}" alt="Daphne Blake" class="foto-info">
+
+            <p class="dublador">
+                🎤  Mantenha o mouse aqui e escute a voz da Daphne dublada por Miriam Ficher
+            </p>
+        </div>
+    </div>
+
+ 
+    <div class="card">
+        <img src="{% static 'img/velma.png' %}" alt="Velma Dinkley">
+
+        <audio class="voz">
+            <source src="{% static 'musica/velma.mp3' %}" type="audio/mpeg">
+        </audio>
+
+        <div class="info">
+            <h2>Velma Dinkley</h2>
+
+            <p>
+                A mente brilhante da equipe, sempre com soluções lógicas e rápidas.
+            </p>
+
+            <img src="{% static 'img/foto-velma.jpg' %}" alt="Velma Dinkley" class="foto-info">
+
+            <p class="dublador">
+                🎤  Mantenha o mouse aqui e escute a voz da Velma dublada por Maria Helena Pader
+            </p>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="{% static 'img/fred.png' %}" alt="Fred Jones">
+
+        <audio class="voz">
+            <source src="{% static 'musica/fred.mp3' %}" type="audio/mpeg">
+        </audio>
+
+        <div class="info">
+            <h2>Fred Jones</h2>
+
+            <p>
+                Líder nato, especialista em armadilhas e sempre pronto para investigar.
+            </p>
+
+            <img src="{% static 'img/foto-fred.jpg' %}" alt="Fred Jones" class="foto-info">
+
+            <p class="dublador">
+                🎤 Mantenha o mouse aqui e escute a voz do Fred dublado por Garcia Júnior
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    <div class="footer-text">
+        <p>&copy; 2026 Projeto Scooby-Doo | Desenvolvido por Hemerson</p>
+        <p>Contato: <a href="email:hemersondaniel987@gmail.com" style="color: aliceblue;">hemersondaniel987@gmail.com</a></p>
+    </div>
+    <div class="social-section">
+        <p>Acompanhe também:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ohemesx/" target="_blank">
+                <img src="{% static 'img/instagram.png' %}" alt="Instagram">
+            </a>
+            <a href="https://github.com/ohemesx" target="_blank">
+                <img src="{% static 'img/github.png' %}" alt="GitHub">
+            </a>
+        </div>
+    </div>
+</footer>
+
+ 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const cards = document.querySelectorAll(".card");
+
+            cards.forEach(card => {
+
+                const audio = card.querySelector(".voz");
+
+                card.addEventListener("mouseenter", () => {
+                    audio.currentTime = 0;
+                    audio.play();
+                });
+
+                card.addEventListener("mouseleave", () => {
+                    audio.pause();
+                    audio.currentTime = 0;
+                });
+
+            });
+
+        });
+
+       window.onload = function () {
+    const ghost = document.querySelector(".ghost");
+    if (ghost) {
+        ghost.classList.add("animate");
+    }
+};
+
+    </script>
+
+</body>
+</html>

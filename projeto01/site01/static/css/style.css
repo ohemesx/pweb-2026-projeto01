@@ -15,7 +15,6 @@ body {
     position: absolute;
 }
 
-/* Fundo */
 .home-container img.fundo {
     top: 0;
     left: 0;
@@ -24,7 +23,6 @@ body {
     z-index: 0;
 }
 
-/* Árvore esquerda com animação */
 .home-container img.arvore-esquerda {
     bottom: 0;
     left: 0;
@@ -33,7 +31,6 @@ body {
     animation: slideLeft 2s ease-out forwards;
 }
 
-/* Árvore direita com animação */
 .home-container img.arvore-direita {
     bottom: 0;
     right: 0;
@@ -42,7 +39,6 @@ body {
     animation: slideRight 2s ease-out forwards;
 }
 
-/* Título */
 .home-container img.titulo {
     top: -100px;
     left: 50%;
@@ -51,7 +47,6 @@ body {
     z-index: 5;
 }
 
-/* Van */
 .home-container img.van {
     top: 50%;
     left: 51%;
@@ -60,7 +55,6 @@ body {
     z-index: 2; 
 }
 
-/* Botão */
 .btn {
     position: absolute;
     bottom: 40px;
@@ -75,7 +69,7 @@ body {
     font-weight: bold;
     box-shadow: 0 6px 12px rgba(0,0,0,0.6);
     transition: all 0.3s ease;
-    z-index: 1000; /* maior que as árvores */
+    z-index: 1000; 
 }
 
 .btn:hover {

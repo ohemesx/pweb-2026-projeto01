@@ -1,14 +1,11 @@
-/* Importa fontes */
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Open+Sans:wght@400;600&display=swap');
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo */
 body.inicio-page {
     font-family: 'Open Sans', sans-serif;
     background: url("../img/fundo3.png") no-repeat center center fixed;
@@ -18,7 +15,6 @@ body.inicio-page {
     overflow: hidden;
 }
 
-/* Barra de navegação */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,14 +26,14 @@ body.inicio-page {
 }
 
 .navbar .logo img {
-    height: 100px;          /* aumenta só a logo */
-    margin-top: -15px;      /* sobe um pouco para não empurrar a navbar */
-    margin-bottom: -40px;   /* ajusta para não aumentar a barra */
+    height: 100px;          
+    margin-top: -15px;      
+    margin-bottom: -40px;  
 }
 
 .navbar .logo img:hover {
-    transform: scale(1.1); /* aumenta levemente ao passar o mouse */
-    filter: drop-shadow(0 0 15px yellow); /* brilho amarelo misterioso */
+    transform: scale(1.1); 
+    filter: drop-shadow(0 0 15px yellow); 
 }
 
 
@@ -57,7 +53,6 @@ body.inicio-page {
     color: white;
 }
 
-/* Container principal */
 .container {
     position: relative;
     width: 100%;
@@ -68,7 +63,6 @@ body.inicio-page {
     padding: 0;
 }
 
-/* Slides */
 .slide {
     display: none;
 }
@@ -76,7 +70,6 @@ body.inicio-page {
     display: block;
 }
 
-/* Slide wrapper */
 .slide-wrapper {
     display: flex;
     justify-content: center;
@@ -87,21 +80,20 @@ body.inicio-page {
     margin-right: 150px;
 }
 
-/* Texto */
 .text-side {
-    width: 500px; /* largo na horizontal */
+    width: 500px; 
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     line-height: 1.5em;
     text-align: left;
-    background: rgba(57, 1, 88, 0.85); /* fundo semitransparente */
+    background: rgba(57, 1, 88, 0.85); 
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0,0,0,0.7);
 }
 .audio-box {
-    background: rgba(57, 1, 88, 0.9); /* roxo misterioso */
-    border: 3px solid #ff9100;        /* laranja Scooby */
+    background: rgba(57, 1, 88, 0.9); 
+    border: 3px solid #ff9100;        
     border-radius: 15px;
     padding: 15px;
     width: 400px;
@@ -110,7 +102,7 @@ body.inicio-page {
 }
 
 .audio-box h3 {
-    font-family: 'Creepster', cursive; /* fonte assustadora */
+    font-family: 'Creepster', cursive; 
     color: #ff9100;
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px black;
@@ -121,7 +113,6 @@ body.inicio-page {
     filter: drop-shadow(0 0 5px #000);
 }
 
-/* Títulos */
 .text-side h2 {
     font-family: 'Creepster', cursive;
     font-size: 2.4em;
@@ -130,14 +121,12 @@ body.inicio-page {
     margin-bottom: 15px;
 }
 
-/* Imagem */
 .image-side img {
-    width: 800px; /* equilibrado com texto */
+    width: 800px; 
     max-width: 100%;
     height: auto;
 }
 
-/* Botões */
 button.prev, button.next {
     position: absolute;
     top: 50%;
@@ -153,14 +142,12 @@ button.prev, button.next {
 button.prev { left: 20px; }
 button.next { right: 20px; }
 
-/* Footer */
-/* Footer */
-/* Footer */
+
 .footer {
-    background: rgb(57, 1, 88);       /* fundo roxo misterioso */
-    color: yellow;                    /* texto amarelo */
-    display: flex;                    /* coloca conteúdo em linha */
-    justify-content: space-between;   /* separa texto e ícones */
+    background: rgb(57, 1, 88);       
+    color: yellow;                    
+    display: flex;                    
+    justify-content: space-between;   
     align-items: center;
     padding: 1px 10px;
     font-size: 1.2em;
@@ -170,12 +157,10 @@ button.next { right: 20px; }
     width: 100%;
 }
 
-/* Texto do footer */
 .footer .footer-text {
     text-align: left;
 }
 
-/* Ícones sociais */
 .footer .social-section {
     text-align: right;
 }
@@ -205,7 +190,6 @@ button.next { right: 20px; }
     filter: drop-shadow(0 0 10px yellow);
 }
 
-/* Morcego diagonal */
 .bat-diagonal {
     position: fixed;
     width: 1500px;
@@ -224,7 +208,6 @@ button.next { right: 20px; }
     100% { bottom: 100%; left: 100%; opacity: 0; transform: rotate(-10deg) scale(1.6); }
 }
 
-/* Morcego esquerda → direita */
 .bat-left-right {
     position: fixed;
     width: 1000px;
@@ -243,7 +226,6 @@ button.next { right: 20px; }
     100% { left: 100%; opacity: 0; transform: rotate(-5deg) scale(1.2); }
 }
 
-/* Morcego direita → esquerda */
 .bat-right-left {
     position: fixed;
     width: 1000px;

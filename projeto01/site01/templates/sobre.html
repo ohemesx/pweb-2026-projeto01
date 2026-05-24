@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Scooby-Doo - Sobre</title>
+    <link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+</head>
+<body class="sobre-page">
+
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'img/titulo.png' %}" alt="Scooby-Doo Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'inicio' %}">Início</a></li>
+            <li><a href="{% url 'elenco' %}">Elenco</a></li>
+            <li><a href="{% url 'sobre' %}" class="active">Sobre</a></li>
+        </ul>
+    </nav>
+
+    
+    <main class="sobre-container">
+        <div class="mystery-machine"></div>
+        <h1>SOBRE O SITE</h1>
+        <p>
+            Este site foi desenvolvido com muito mistério, e uma noite sem dormir.  
+            Criado por <a href="https://github.com/ohemesx" target="_blank">Hemerson Daniel.</a>  
+            O objetivo é celebrar o universo de Scooby-Doo, trazendo curiosidades, elenco e homenagens aos dubladores que marcaram gerações.  
+            Feito com <strong>HTML, CSS, JavaScript e Django</strong>, porque até o Scooby precisa de um framework para resolver mistérios.  
+            Agradecemos a todos(eu mesmo) que contribuíram e principalmente ao <a href="https://lista.mercadolivre.com.br/nescaf%C3%A9?matt_tool=33979569&matt_word=nescaf%C3%A9&matt_source=bing&matt_campaign=MLB_ML_BING_AO_MLB1403-Alimentos%20e%20Bebidas_X_SEARCH_ALLB_TXS_MARC-Pura&matt_campaign_id=382857331&matt_ad_group=MARC_Pura_EX_Nescafe_NT_&matt_match_type=e&matt_network=o&matt_device=c&matt_keyword=nescaf%C3%A9&msclkid=4548a8bb273a1c3ef991c2a960b6982d&utm_source=bing&utm_medium=cpc&utm_campaign=MLB_ML_BING_AO_MLB1403-Alimentos%20e%20Bebidas_X_SEARCH_ALLB_TXS_MARC-Pura&utm_term=nescaf%C3%A9&utm_content=MARC_Pura_EX_Nescafe_NT_" target="_blank">café</a>, que manteve o desenvolvedor acordado. ☕
+        </p>
+
+        
+        <div class="info-columns">
+            <div class="column">
+                <h2>PALETA DE CORES DO SITE</h2>
+                <div class="paleta">
+                    <div style="background: rgb(57, 1, 88);" title="rgb(57,1,88)"></div>
+                    <div style="background: #ff9100;" title="#ff9100"></div>
+                    <div style="background: yellow;" title="yellow"></div>
+                    <div style="background: #f4f46c;" title="#f4f46c"></div>
+                </div>
+            </div>
+            <div class="column">
+                <h2>FONTES USADAS</h2>
+                <p>Creepster, Open Sans, Arial</p>
+            </div>
+            <div class="column">
+                <h2>SITES CONSULTADOS</h2>
+                <ul>
+                    <li><a href="https://scoobydoo.fandom.com/wiki/Scooby-Doo_Wiki" target="_blank">Scooby-Doo Fandom Wiki</a></li>
+                    <li><a href="https://www.warnerbros.com/tv/scooby-doo" target="_blank">Warner Bros - Scooby-Doo</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Scooby-Doo" target="_blank">Wikipedia - Scooby-Doo</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="django-logo">
+            <a href="https://www.djangoproject.com/" target="_blank">
+                <img src="{% static 'img/madewithdjango.png' %}" alt="Made with Django">
+            </a>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2026 Projeto Scooby-Doo | Desenvolvido por Hemerson</p>
+            <p>Contato: <a href="email:hemersondaniel987@gmail.com" style="color: aliceblue;">hemersondaniel987@gmail.com</a></p>
+        </div>
+        <div class="social-section">
+            <p>Acompanhe também:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ohemesx/" target="_blank">
+                    <img src="{% static 'img/instagram.png' %}" alt="Instagram">
+                </a>
+                <a href="https://github.com/ohemesx" target="_blank">
+                    <img src="{% static 'img/github.png' %}" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>window.onload = function () {
+    const van = document.querySelector(".mystery-machine");
+    if (van) {
+        van.classList.add("animate");
+    }
+};
+</script>
+
+
+</html>

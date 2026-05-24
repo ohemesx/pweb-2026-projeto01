@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
 </head>
 <body class="inicio-page">
-    <!-- Barra de navegação -->
+   
     <nav class="navbar">
         <div class="logo">
             <img src="{% static 'img/titulo.png' %}" alt="Scooby-Doo Logo">
@@ -15,14 +15,14 @@
         <ul class="nav-links">
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'inicio' %}">Início</a></li>
-            <li><a href="/elenco/">Elenco</a></li>
+            <li><a href="{% url 'elenco' %}">Elenco</a></li>
             <li><a href="/sobre/">Sobre</a></li>
         </ul>
     </nav>
 
-    <!-- Conteúdo principal -->
+    
     <div class="container">
-        <!-- Slide 1 -->
+       
         <section class="slide active" id="origem">
             <div class="slide-wrapper">
                 <div class="image-side">
@@ -45,7 +45,7 @@ O desenho <strong>Scooby-Doo</strong> estreou em 13 de setembro de 1969 na CBS, 
             </div>
         </section>
 
-        <!-- Slide 2 -->
+        
         <section class="slide" id="evolucao">
             <div class="slide-wrapper">
                 <div class="image-side">
@@ -72,7 +72,7 @@ O desenho <strong>Scooby-Doo</strong> estreou em 13 de setembro de 1969 na CBS, 
             </div>
         </section>
 
-        <!-- Slide 3 -->
+        
         <section class="slide" id="filmes">
             <div class="slide-wrapper">
                 <div class="image-side">
@@ -87,12 +87,12 @@ O desenho <strong>Scooby-Doo</strong> estreou em 13 de setembro de 1969 na CBS, 
             </div>
         </section>
 
-        <!-- Botões de navegação -->
+        
         <button class="prev">←</button>
         <button class="next">→</button>
     </div>
 
-   <!-- Rodapé -->
+ 
 <footer class="footer">
     <div class="footer-text">
         <p>&copy; 2026 Projeto Scooby-Doo | Desenvolvido por Hemerson</p>

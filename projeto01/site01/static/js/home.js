@@ -1,5 +1,5 @@
 window.onload = () => {
-    const vanContainer = document.querySelector(".van-container"); // div que contém a imagem da van
+    const vanContainer = document.querySelector(".van-container"); 
 
     // cria os faróis
     const leftLight = document.createElement("div");

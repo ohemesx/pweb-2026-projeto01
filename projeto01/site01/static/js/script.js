@@ -23,27 +23,27 @@ document.addEventListener("DOMContentLoaded", () => {
         showSlide(currentIndex);
     });
 
-    // inicia mostrando o primeiro slide
+    
     showSlide(currentIndex);
 });
 
 window.onload = () => {
     const params = new URLSearchParams(window.location.search);
     if (params.get("animacao") === "1") {
-        // morcego diagonal
+        
         const bat1 = document.createElement("img");
         bat1.src = "/static/img/bat.png";
         bat1.classList.add("bat-diagonal");
         document.body.appendChild(bat1);
 
 
-        // morcego direita → esquerda
+        
         const bat3 = document.createElement("img");
         bat3.src = "/static/img/bat2.png";
         bat3.classList.add("bat-right-left");
         document.body.appendChild(bat3);
 
-        // remove todos após animação
+  
         [bat1, bat2, bat3].forEach(bat => {
             bat.addEventListener("animationend", () => bat.remove());
         });
