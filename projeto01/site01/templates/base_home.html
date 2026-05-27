@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Scooby-Doo{% endblock %}</title>
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- espaço para CSS específico da home -->
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Conteúdo da página home -->
+    {% block content %}{% endblock %}
+</body>
+</html>

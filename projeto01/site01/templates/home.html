@@ -1,22 +1,16 @@
+{% extends 'base_home.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Scooby-Doo</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <div class="home-container">
-        <img src="{% static 'img/fundo.png' %}" class="fundo" alt="Fundo misterioso">
-        <img src="{% static 'img/arvoresquerda.png' %}" class="arvore-esquerda" alt="Árvore esquerda">
-        <img src="{% static 'img/arvoredireita.png' %}" class="arvore-direita" alt="Árvore direita">
-        <img src="{% static 'img/titulo.png' %}" class="titulo" alt="Título Scooby-Doo">
-        <img src="{% static 'img/van.png' %}" class="van" alt="Mystery Machine">
 
-        <a href="{% url 'inicio' %}?animacao=1" class="btn">Conheça a turma do mistério</a>
+{% block title %}Home{% endblock %}
 
-        
-    </div>
-</body>
-</html>
+{% block content %}
+<div class="home-container">
+    <img src="{% static 'img/fundo.png' %}" class="fundo" alt="Fundo misterioso">
+    <img src="{% static 'img/arvoresquerda.png' %}" class="arvore-esquerda" alt="Árvore esquerda">
+    <img src="{% static 'img/arvoredireita.png' %}" class="arvore-direita" alt="Árvore direita">
+    <img src="{% static 'img/titulo.png' %}" class="titulo" alt="Título Scooby-Doo">
+    <img src="{% static 'img/van.png' %}" class="van" alt="Mystery Machine">
+
+    <a href="{% url 'inicio' %}?animacao=1" class="btn">{{ home.botao_texto }}</a>
+</div>
+{% endblock %}

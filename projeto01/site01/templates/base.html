@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Scooby-Doo{% endblock %}</title>
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- espaço para CSS específico de cada página -->
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Menu global -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'img/titulo.png' %}" alt="Scooby-Doo Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'inicio' %}">Início</a></li>
+            <li><a href="{% url 'elenco' %}">Elenco</a></li>
+            <li><a href="{% url 'sobre' %}">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo de cada página -->
+    {% block content %}{% endblock %}
+
+    <!-- Footer global -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2026 Projeto Scooby-Doo | Desenvolvido por Hemerson</p>
+            <p>Contato: <a href="mailto:hemersondaniel987@gmail.com" style="color: aliceblue;">hemersondaniel987@gmail.com</a></p>
+        </div>
+        <div class="social-section">
+            <p>Acompanhe também:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ohemesx/" target="_blank">
+                    <img src="{% static 'img/instagram.png' %}" alt="Instagram">
+                </a>
+                <a href="https://github.com/ohemesx" target="_blank">
+                    <img src="{% static 'img/github.png' %}" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+{% block extra_js %}{% endblock %}
