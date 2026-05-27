@@ -4,15 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Scooby-Doo{% endblock %}</title>
-
-    <!-- CSS global -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-    <!-- espaço para CSS específico de cada página -->
     {% block extra_css %}{% endblock %}
 </head>
 <body>
-    <!-- Menu global -->
     <nav class="navbar">
         <div class="logo">
             <img src="{% static 'img/titulo.png' %}" alt="Scooby-Doo Logo">
@@ -25,10 +20,8 @@
         </ul>
     </nav>
 
-    <!-- Conteúdo de cada página -->
     {% block content %}{% endblock %}
 
-    <!-- Footer global -->
     <footer class="footer">
         <div class="footer-text">
             <p>&copy; 2026 Projeto Scooby-Doo | Desenvolvido por Hemerson</p>

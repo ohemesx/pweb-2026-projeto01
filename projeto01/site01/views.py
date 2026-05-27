@@ -30,12 +30,11 @@ def inicio(request):
 
 def elenco(request):
     elenco = [
-        {"nome": "Scooby-Doo", "descricao": "O grande danado que ama biscoitos Scooby e sempre se mete em confusão junto com Salsicha.", "img": "img/scooby-doo.png", "foto": "img/foto-scooby.jpg", "audio": "musica/scooby.mp3", "dublador": "Orlando Drummond"},
-        {"nome": "Salsicha Rogers", "descricao": "Melhor amigo de Scooby, comilão e medroso, mas sempre fiel ao grupo.", "img": "img/salsicha.png", "foto": "img/foto-salsicha.jpg", "audio": "musica/salsicha.mp3", "dublador": "Mário Monjardim"},
-        {"nome": "Daphne Blake", "descricao": "Amante da moda, corajosa e muitas vezes chamada de arruma-encrenca.", "img": "img/daphne.png", "foto": "img/foto-daphne.jpg", "audio": "musica/daphne.mp3", "dublador": "Miriam Ficher"},
-        {"nome": "Velma Dinkley", "descricao": "A mente brilhante da equipe, sempre com soluções lógicas e rápidas.", "img": "img/velma.png", "foto": "img/foto-velma.jpg", "audio": "musica/velma.mp3", "dublador": "Maria Helena Pader"},
-        {"nome": "Fred Jones", "descricao": "Líder nato, especialista em armadilhas e sempre pronto para investigar.", "img": "img/fred.png", "foto": "img/foto-fred.jpg", "audio": "musica/fred.mp3", "dublador": "Garcia Júnior"},
-        # aqui você pode adicionar os outros até completar 11
+        {"nome": "Scooby-Doo", "descricao": "O grande danado que ama biscoitos Scooby e sempre se mete em confusão junto com Salsicha.", "img": "img/scooby-doo.png", "foto": "img/foto-scooby.jpg", "audio": "musica/scooby.mp3", "dublador": "Mantenha o cursor aqui e escute a voz do dublador brasileiro: Orlando Drummond"},
+        {"nome": "Salsicha Rogers", "descricao": "Melhor amigo de Scooby, comilão e medroso, mas sempre fiel ao grupo.", "img": "img/salsicha.png", "foto": "img/foto-salsicha.jpg", "audio": "musica/salsicha.mp3", "dublador": "Mantenha o cursor aqui e escute a voz do dublador brasileiro: Mário Monjardim"},
+        {"nome": "Daphne Blake", "descricao": "Amante da moda, corajosa e muitas vezes chamada de arruma-encrenca.", "img": "img/daphne.png", "foto": "img/foto-daphne.jpg", "audio": "musica/daphne.mp3", "dublador": "Mantenha o cursor aqui e escute a voz do dublador brasileiro: Miriam Ficher"},
+        {"nome": "Velma Dinkley", "descricao": "A mente brilhante da equipe, sempre com soluções lógicas e rápidas.", "img": "img/velma.png", "foto": "img/foto-velma.jpg", "audio": "musica/velma.mp3", "dublador": "Mantenha o cursor aqui e escute a voz do dublador brasileiro: Maria Helena Pader"},
+        {"nome": "Fred Jones", "descricao": "Líder nato, especialista em armadilhas e sempre pronto para investigar.", "img": "img/fred.png", "foto": "img/foto-fred.jpg", "audio": "musica/fred.mp3", "dublador": " Mantenha o cursor aqui e escute a voz do dublador brasileiro: Garcia Júnior"},
     ]
     return render(request, "elenco.html", {"elenco": elenco})
 

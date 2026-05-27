@@ -76,8 +76,6 @@ body {
     background-color: #ff6600;
     transform: translateX(-50%) scale(1.1);
 }
-
-/* Animações */
 @keyframes slideLeft {
     from { transform: translateX(-100%); }
     to { transform: translateX(0); }
@@ -87,4 +85,17 @@ body {
     from { transform: translateX(100%); }
     to { transform: translateX(0); }
 }
- 
+@media (min-width: 2000px) {
+    .home-container img.arvore-esquerda,
+    .home-container img.arvore-direita {
+        width: 2000px;
+    }
+
+    .home-container img.titulo {
+        width: 1400px;
+    }
+
+    .home-container img.van {
+        width: 2500px;
+    }
+}
